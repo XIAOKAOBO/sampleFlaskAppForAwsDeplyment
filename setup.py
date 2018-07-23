@@ -9,4 +9,3 @@ setup(
     ],
 )
 
-import flaskappawsdeployment.flaskapp

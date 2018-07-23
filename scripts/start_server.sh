@@ -1,3 +1,2 @@
-export FLASK_APP=flaskapp.py
-export FLASK_ENV=development
+export FLASK_APP=flaskappawsdeployment
 flask run

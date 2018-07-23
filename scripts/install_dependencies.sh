@@ -1,3 +1,2 @@
-pip install --upgrade pip
+sudo -s
 pip install flask
-pip install -r requirements.txt

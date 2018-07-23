@@ -30,7 +30,7 @@ hooks:
     - location: scripts/install_dependencies.sh
       timeout: 300
       runas: root
-  AfterInstall:
+  AfterInstall: scripts/nothing.sh
     - location: 
       timeout: 300
       runas: root
@@ -38,7 +38,7 @@ hooks:
     - location: scripts/start_server.sh
       timeout: 300
       runas: root
-  ApplicationStop:
+  ApplicationStop: scripts/nothing.sh
     - location: 
       timeout: 300
       runas: root

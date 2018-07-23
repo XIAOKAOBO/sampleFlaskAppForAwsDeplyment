@@ -27,7 +27,7 @@ files:
     destination: /var/www/html/
 
 permissions:
-    - object: /var/www/html/scripts
+    - object: /var/www/html/flaskappawsdeployment/scripts
       owner: root
       mode: 777
       type:
@@ -35,18 +35,18 @@ permissions:
 
 hooks:
   BeforeInstall:
-    - location: /scripts/install_dependencies.sh
+    - location: /flaskappawsdeployment/scripts/install_dependencies.sh
       timeout: 300
       runas: root
   AfterInstall: 
-    - location: /scripts/nothing.sh
+    - location: /flaskappawsdeployment/scripts/nothing.sh
       timeout: 300
       runas: root
   ApplicationStart:
-    - location: /scripts/start_server.sh
+    - location: /flaskappawsdeployment/scripts/start_server.sh
       timeout: 300
       runas: root
   ApplicationStop: 
-    - location: /scripts/nothing.sh
+    - location: /flaskappawsdeployment/scripts/nothing.sh
       timeout: 300
       runas: root
